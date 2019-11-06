@@ -21,11 +21,10 @@ This repo contains a folder called `site`, which, in turn, contains some starter
 1. `README.md`
 2. `ten-principles-for-good-design.txt`
 3. `site/css/reset.css`
-4. `site/css/style.css`
-5. `site/sass/style.scss`
-6. `site/sass/.sass-lint.yml`
-7. `site/index.html`
-8. `site/img/`
+4. `site/sass/style.scss`
+5. `site/sass/.sass-lint.yml`
+6. `site/index.html`
+7. `site/img/`
 
 **Note**: There are `.gitignore` files all across this scaffold. **Do not modify them.**
 ## The Rules
@@ -37,7 +36,7 @@ This repo contains a folder called `site`, which, in turn, contains some starter
 * Do not alter any of the `.gitignore` files.
 * All your HTML files must go in the root of the `site` folder, with the `index.html` file acting as the springboard for your project.
 * All your Sass files must be placed in the included `sass` folder.
-* All the CSS your Sass generates must be placed in the included `css` folder, starting with `style.css`.
+* All the CSS your Sass generates must be placed in a file called `style.css`, which must be placed in the included `css` folder.
 * Any images you might use must be placed in the `img` folder and must be 1MB or smaller.
 * Your site’s design and UI must be logical, clear, and easy to use.
 * You must use at most two typefaces. Look to [`https://fonts.google.com/`](https://fonts.google.com/) for ideas.
