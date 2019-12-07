@@ -1,0 +1,131 @@
+@import 'variables';
+
+body {
+   background-color: $background-color;
+   overflow: hidden;
+}
+
+h1 {
+   font-family: $font-family-heading;
+   font-size: $font-size-h1;
+   color: $font-color;
+   text-align: center;
+}
+
+#title {
+   position: absolute;
+   margin: auto;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #0000003d;
+   box-shadow: 0 0 20px black;
+   padding: 0.5vw;
+}
+
+#title > p {
+   padding-top: 30px;
+   font-family: $font-family-heading;
+   font-size: $font-size-p--main;
+   color: $font-color;
+   text-align: center;
+}
+
+#hero {
+   position: absolute;
+   z-index: -1;
+   height: 100vh;
+   width: 100vw;
+}
+
+.principleMain {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.principleDiv {
+   width: 23%;
+   padding: 30px 15px;
+   text-align: center;
+   align-self: center;
+   color: $font-color;
+   font-size: $font-size-p--sub;
+}
+
+.principleDiv:hover {
+   cursor: pointer;
+   box-shadow: 0 0 50px black;
+   transition: 0.4s;
+}
+
+.principleImg {
+   width: 9vw;
+}
+
+.principleText {
+   vertical-align: middle;
+}
+
+.box {
+   width: 70%;
+   overflow: hidden;
+   background: white;
+   box-shadow: 0 0 50px black;
+   border-radius: 8px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 9999;
+   padding: 20px;
+   text-align: center;
+   flex-flow: wrap;
+   flex-direction: row;
+   display: none;
+
+   img {
+      background: rgba(0, 0, 0, 0.479);
+      box-shadow: 0 0 50px black;
+      width: 23%;
+   }
+
+   p {
+      width: 75%;
+      background: white;
+      padding: 10px;
+      font-size: $font-size-p--sub;
+      box-shadow: 0 0 25px black;
+   }
+}
+
+.close {
+   font-size: 20px;
+   color: white;
+   padding: 10px 30px;
+   margin-top: 20px;
+   cursor: pointer;
+   background: lightsalmon;
+   display: inline-block;
+   border-radius: 4px;
+   transition: 0.4s;
+}
+
+.close:hover {
+   background: white;
+   color: black;
+   transition: 0.4s;
+   box-shadow: 0 0 20px black;
+}
+
+@media only screen and (max-with: 1096px) {
+   .principleDiv {
+      margin-bottom: 5vh;
+   }
+}
+
+@media only screen and (max-with: 745px) {
+   .principleDiv {
+      padding: 25px 0;
+      margin-bottom: 5vh;
+   }
+}
