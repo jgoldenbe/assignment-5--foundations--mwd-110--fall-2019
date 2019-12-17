@@ -40,22 +40,24 @@ h1 {
 
 .principleMain {
    display: flex;
+   width: 100%;
    flex-wrap: wrap;
 }
 
 .principleDiv {
-   width: 23%;
-   padding: 30px 15px;
+   width: 20vw;
+   margin: 4vh 2.5vw;
+   // padding: 30px 15px;
    text-align: center;
    align-self: center;
    color: $font-color;
    font-size: $font-size-p--sub;
+   transition: 400ms;
 }
 
 .principleDiv:hover {
    cursor: pointer;
    box-shadow: 0 0 50px black;
-   transition: 0.4s;
 }
 
 .principleImg {
@@ -107,13 +109,12 @@ h1 {
    background: lightsalmon;
    display: inline-block;
    border-radius: 4px;
-   transition: 0.4s;
+   transition: 400ms;
 }
 
 .close:hover {
    background: white;
    color: black;
-   transition: 0.4s;
    box-shadow: 0 0 20px black;
 }
 
